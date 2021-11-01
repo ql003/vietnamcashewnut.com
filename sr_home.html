@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+             Web Design Website - Premium Vietnam Cashew Nut Factory
+
+             Author: Wee Qin Lan
+    
+            Filename: sr_home.html
+        -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <link rel="icon" href="images\iconbrowser.jpg">
+    <title>Vietnam Cashew Nut | Home</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="layout.css" rel="stylesheet" />
+
+    <style>
+
+        .introInOut {
+            display: flex;
+            position: relative;
+            margin-top: 3%;
+            width: 100%;
+        }
+
+        .introInOut img {
+            animation: fade 20s;
+            box-shadow: 4px 4px 4px#aaaaaa;
+        }
+
+        #welcome {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        #home1, #home2, #home3, #home4 {
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+
+
+        @keyframes fade {
+            0% {
+                opacity:1;
+            }
+            15% {
+                opacity:0;
+            }
+            30% {
+                opacity:0;
+            }
+            45% {
+                opacity:0;
+            }
+            60% {
+                opacity:0;
+            }
+            75% {
+                opacity:0;
+            }
+            90% {
+                opacity:1;
+            }
+            100% {
+                opacity:1;
+            }
+        }   
+
+        #welcome {
+            animation-delay: 0s;
+        }
+
+        #home1 {
+            animation-delay: 4s;
+        }
+
+        #home2 {
+            animation-delay: 8s;
+        }
+
+        #home3 {
+            animation-delay: 12s;
+        }
+
+        #home4 {
+            animation-delay: 16s;
+        }
+        
+        .homeProduct {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            margin-top: 13%;
+            border: double black;
+            box-shadow: 7px 7px 7px#aaaaaa;
+        }
+        
+        .homeProduct div {
+            display: flex;
+        }
+        
+        .homeProduct legend {
+            font-family: 'Imprint MT Shadow', Castellar, Gabriola, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            color: rgb(60, 60, 60);
+        }
+        
+        .homeProduct1, .homeProduct2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+        }
+        
+        .homeBread, .homeCake, .homeTart {
+            padding-top: 3.5em;
+        }
+        
+        .homeDonut {
+            padding-top: 3.5em;
+            padding-bottom: 5.5em;
+        }
+        
+        .homeProduct img { 
+            width: 380px;
+            height: 250px;
+            box-shadow: 4px 4px rgb(150, 150, 150);
+        }
+        
+        .breadFade, .cakeFade, .tartFade, .donutFade {
+            position: absolute;
+            width: 380px;
+            height: 250px;
+            opacity: 0;
+            background-color: rgb(230, 230, 230);
+        }
+        
+        .breadFade a, .cakeFade a, .tartFade a, .donutFade a {
+            position: absolute;
+            width: 380px;
+            height: 250px;
+            padding-top: 3em;
+            color: black;
+            font-size: 38px;
+            font-family: 'Microsoft Himalaya', sans-serif;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .breadFade:hover, .cakeFade:hover, .tartFade:hover, .donutFade:hover {
+            opacity: 0.8;
+            transition: .5s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="homelogo">
+            <a href="sr_home.html"><img src="images\logo.png" alt="Jannat Asia Trading Logo"><h2>Premium Vietnam Cashew Nut Factory</h2></a>
+        </div>
+        
+        <div class="cartlogo">
+            <a href="sr_cart.html"><img src="images\shopping-cart.png" alt="Cart" /></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="active" href="sr_home.html">Home</a></li>
+                <li><a href="sr_about us.html">About Us</a></li>
+                <div class="categoryList">
+                    <button class="arrow">Category <img src="images\arrow.png"></button>
+                    <div class="categoryContent">
+                        <a href="sr_breads.html">Breads</a>
+                        <a href="sr_cakes.html">Cakes</a>
+                        <a href="sr_tarts.html">Tarts</a>
+                        <a href="sr_donuts.html">Donuts</a>
+                    </div>
+                </div>
+                <li><a href="sr_contact us.html">Contact Us</a></li>
+            </ul>   
+        </nav>
+    </div>
+
+    <div class="introInOut">
+        <img src="images\home3.png" id="home3">
+        <img src="images\home2.png" id="home2">
+        <img src="images\home1.png" id="home1">
+        <img src="images\welcome.png" id="welcome">
+    </div>
+
+    <fieldset class="homeProduct">
+        <legend>What We Have</legend>
+
+    </fieldset>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="main-content">
+            <div class="left box">
+                <h2>OPENING HOURS</h2>
+                <div class="content">
+                    <dl>
+                        <dt>Monday 8:00am-8:00pm</dt>
+                        <dt>Tuesday 8:00am-8:00pm</dt>
+                        <dt>Wednesday 8:00am-8:00pm</dt>
+                        <dt>Thursday 8:00am-8:00pm</dt>
+                        <dt>Friday 8:00am-8:00pm</dt>
+                        <dt>Saturday 10:00am-5:00pm</dt>
+                        <dt>Sunday 10:00am-5:00pm</dt>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="center box">
+                <h2>LOCATION</h2>
+                <div class="content">
+                    <div class="place">
+                        <a href="https://goo.gl/maps/juyn7psf9PmqXTtn8"><img src="images\map.png" width="40px" height="40px" ></a>
+                        <span class="text">	D7 Offices D7-5-22, Bangunan Perdagangan D7, 800 Jalan Sentul, 51000 Kuala Lumpur
+                        </span>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+60-1126066714"><img src="images\phone.png" width="40px" height="40px" ></a>
+                        <span class="text">+60-1126066714</span>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:cherry@jannatasia.net"><img src="images\mail.png" width="40px" height="4" ></a>
+                        <span class="text">cherry@jannatasia.net</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Stay updated with us</h2>
+                <div class="content">
+                    <div class="social">
+                    <a href="https://www.instagram.com/jannatasiatrading/"><img src="images\instagramlogo.png" width="45px" height="45px"></a>
+                    <a href="https://www.facebook.com/jannatasiaTrading?_rdc=1&_rdr"><img src="images\fblogo.png" width="36" height="38px" ></a>
+                    <a href="https://t.me/joinchat/GnVn5qqvysBiMjRl"><img src="images\telegramlogo.png" width="43px" height="43px"></a>
+                    <a href="https://twitter.com/AsiaHeavensMy"><img src="images\twitterlogo.png" width="42px" height="41px" ></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h5>Jannat Asia Trading Sdn Bhd (1399709-A) &#169 2021 All Rights Reserved.</h5>
+    </footer>
+ <!-- end: Footer -->
+
+</body>
+</html>

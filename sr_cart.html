@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Web Design Website - Premium Vietnam Cashew Nut Factory
+
+            Author: Wee Qin Lan
+    
+            Filename: sr_cart.html
+        -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <link rel="icon" href="images\iconbrowser.jpg">
+    <title>Vietnam Cashew Nut | Cart</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="layout.css" rel="stylesheet" />
+    <script type="text/javascript" src="addtocart.js" defer></script>
+
+
+    <style type="text/css">
+        .cart-container {
+            margin: 50px auto;
+            width: 100%;
+        }
+
+            .cart-container h3 {
+                text-transform: uppercase;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                margin-top: 10px;
+                text-shadow: 2px 2px rgb(226, 159, 240);
+            }
+
+            .cart-container p a {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: rgb(4, 22, 102);
+                text-shadow: 1px 1px rgb(94, 235, 200);
+                transition: background-color 4s, color 3s, font-size 2s;
+            }
+
+                .cart-container p a:hover {
+                    color: rgb(32, 80, 209);
+                    font-size: 1.5em;
+                }
+
+        .numbers {
+            text-align: right;
+            background-color: lightyellow
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        th {
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background-color: #7e8eeb;
+            font-weight: normal;
+        }
+
+        td {
+            padding: 10px 10px;
+        }
+
+            td input {
+                width: 40px;
+                height: 30px;
+                padding: 5px;
+            }
+
+        .total-price {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        th:last-child {
+            text-align: right;
+        }
+
+        .btn input[type=submit] {
+            background-color: #7e8eeb;
+            color: ghostwhite;
+            padding: 12px;
+            margin: 25px 0;
+            border: none;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+            .btn input[type=submit]:hover {
+                background-color: rgb(106, 153, 204);
+                color: #111111;
+            }
+
+            #emptycart, #checkout {
+                float: right;
+                padding: 12px 20px;
+                cursor: pointer;
+                background-color: gray;
+                color: white;
+            }
+
+        @media only screen and (max-width: 600px) {
+            .cart-info p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="homelogo">
+            <a href="sr_bakery.html"><img src="images\logo.png" alt="Jannat Asia Trading Logo"><h2>Premium Vietnam Cashew Nut Factory</h2></a>
+        </div>
+
+        <div class="cartlogo">
+            <a href="sr_cart.html"><img src="images\shopping-cart.png" alt="Cart" /></a>
+        </div>
+    </header>
+
+    
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="active" href="sr_home.html">Home</a></li>
+                <li><a href="sr_about us.html">About Us</a></li>
+                <div class="categoryList">
+                    <button class="arrow">Category <img src="images\arrow.png"></button>
+                    <div class="categoryContent">
+                        <a href="sr_breads.html">Breads</a>
+                        <a href="sr_cakes.html">Cakes</a>
+                        <a href="sr_tarts.html">Tarts</a>
+                        <a href="sr_donuts.html">Donuts</a>
+                    </div>
+                </div>
+                <li><a href="sr_contact us.html">Contact Us</a></li>
+            </ul>   
+        </nav>
+    </div>
+
+
+    <div class="cart-container">
+
+        <h3><b>Your Cart</b></h3><p><a href="sr_home.html">Continue Shopping</a></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price(RM)</th>
+                </tr>
+            </thead>
+
+            <tbody id="carttable">
+            </tbody>
+        </table>
+        <hr>
+        <table id="carttotals">
+            <tr>
+                <td><strong>Items</strong></td>
+                <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+                <td>x <span id="itemsquantity">0</span></td>
+
+                <td>RM<span id="total">0</span></td>
+            </tr>
+        </table>
+
+
+        <div class="cart-buttons">
+            <button id="emptycart">Empty Cart</button>
+            <form action="sr_payment.html">
+                <button id="checkout">Checkout</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="main-content">
+            <div class="left box">
+                <h2>OPENING HOURS</h2>
+                <div class="content">
+                    <dl>
+                        <dt>Monday 10:00am-10:00pm</dt>
+                        <dt>Tuesday 10:00am-10:00pm</dt>
+                        <dt>Wednesday 10:00am-10:00pm</dt>
+                        <dt>Thursday <b>CLOSED</b></dt>
+                        <dt>Friday 10:00am-10:00pm</dt>
+                        <dt>Saturday 10:00am-9:00pm</dt>
+                        <dt>Sunday 10:00am-9:00pm</dt>
+                    </dl>
+                    <div class="social">
+                        <a href="https://www.instagram.com/squarerootbake/"><img src="images\instagramlogo.png" width="27px" height="27px"></a>
+                        <a href="tel:+0163833389"><img src="images\whatsapplogo.png" width="23px" height="23px"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>LOCATION</h2>
+                <div class="content">
+                    <div class="place">
+                        <a href="https://www.google.com/maps/@2.5912139,101.969057,15z"><img src="images\map.png" width="25px" height="25px"></a>
+                        <span class="text">Petaling Jaya,Selangor</span>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+0163833389"><img src="images\phone.png" width="25px" height="25px"></a>
+                        <span class="text">+016-3833389</span>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:squarerootbake@gmail.com"><img src="images\mail.png" width="28px" height="20px"></a>
+                        <span class="text">squarerootbake@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Stay updated with us:</h2>
+                <div class="content">
+                    <form action="#">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h5>Square Root Bakery &#169 2020 all rights reserved.</h5>
+
+    </footer>
+
+</body>
+</html>

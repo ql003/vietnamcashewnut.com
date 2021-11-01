@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+            Web Design Assignment - Square Root Bakery
+            
+            Author: Chong Theng Mei
+    
+            Filename: sr_tarts.html
+        -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <link rel="icon" href="images\iconbrowser.jpg">
+    <title>Vietnam Cashew Nut | Home</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="layout.css" rel="stylesheet" />
+    <script type="text/javascript" src="addtocart.js" defer></script>
+  
+
+
+    <style>
+        #tarts {
+            margin-top: 4%;
+            font-style: italic;
+            font-size: 78px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px white;
+            color: rgb(60, 60, 60);
+            font-family: 'Gabriola', 'Lucida Calligraphy', sans-serif;
+        }
+
+
+        .tarts {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .tarts img {
+                width: 300px;
+                height: 300px;
+            }
+
+        .tarts1, .tarts2 {
+            width: 100%;
+            height: auto;
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .tarts1 div, .tarts2 div {
+                padding-top: 4em;
+                padding-bottom: 1em;
+                margin-top: 3em;
+                background-color: rgb(245,244,241);
+                display: flex;
+                display: block;
+                transition: transform .2s;
+            }
+
+        .tarts h3 {
+            font-family: 'Arial',sans-serif;
+            text-align: center;
+            margin-top: 6%;
+            font-size: 20px;
+        }
+
+        .tarts p {
+            line-height: 2em;
+            text-align: center;
+            font-family: 'Arial',sans-serif;
+        }
+
+        .tarts1 b {
+            font-style: italic;
+            color: rgb(12, 4, 131);
+        }
+
+        .tarts button {
+            width: 130px;
+            height: 50px;
+            position: relative;
+            display: block;
+            font-size: 16px;
+            background-color: rgba(220,209,201,0.8);
+            margin-top: 20%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+            .tarts button:hover {
+                background-color: rgb(214,201,190);
+            }
+
+        .portuguese:hover, .fruit:hover, .chocolate:hover, .blueberrycheese:hover, .egg:hover, .matcha:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .cart-container {
+            opacity: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="homelogo">
+            <a href="sr_home.html"><img src="images\logo.png" alt="Jannat Asia Trading Logo"><h2>Premium Vietnam Cashew Nut Factory</h2></a>
+        </div>
+        
+        <div class="cartlogo">
+            <a href="sr_cart.html"><img src="images\shopping-cart.png" alt="Cart" /></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="active" href="sr_home.html">Home</a></li>
+                <li><a href="sr_about us.html">About Us</a></li>
+                <div class="categoryList">
+                    <button class="arrow">Category <img src="images\arrow.png"></button>
+                    <div class="categoryContent">
+                        <a href="sr_breads.html">Breads</a>
+                        <a href="sr_cakes.html">Cakes</a>
+                        <a href="sr_tarts.html">Tarts</a>
+                        <a href="sr_donuts.html">Donuts</a>
+                    </div>
+                </div>
+                <li><a href="sr_contact us.html">Contact Us</a></li>
+            </ul>   
+        </nav>
+    </div>
+
+
+    <h1 id="tarts">Tarts</h1>
+
+    <div class="tarts">
+    <div id="alerts"></div>
+    <div class="tarts1">
+            <div class="portuguese">
+                <img src="images\portuguese egg tart.png">
+                <h3 class="productname">Portuguese Egg Tart</br><b>Hot Selling</b></h3>
+                <p class="price">RM2.30</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="matcha">
+                <img src="images\matcha tart.jpg">
+                <h3 class="productname">Matcha Tart</br><b>Hot Selling</b></h3>
+                <p class="price">RM2.00</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="chocolate">
+                <img src="images\chocolate tart.jpg">
+                <h3 class="productname">Chocolate Tart</h3>
+                <p class="price">RM1.80</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="tarts2">
+            <div class="blueberrycheese">
+                <img src="images\blueberry cheese tart.jpg">
+                <h3 class="productname">Blueberry Cheese Tart</h3>
+                <p class="price">RM2.20</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="fruit">
+                <img src="images\fruit tart.jpg">
+                <h3 class="productname">Fruit Tart</h3>
+                <p class="price">RM2.00</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="egg">
+                <img src="images\egg tart.jpg">
+                <h3 class="productname">Egg Tart</h3>
+                <p class="price">RM1.50</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <h2>Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Product</strong></th>
+                        <th><strong>Price</strong></th>
+                    </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+            </table>
+            <hr>
+            <table id="carttotals">
+                <tr>
+                    <td><strong>Items</strong></td>
+                    <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                    <td>x <span id="itemsquantity">0</span></td>
+
+                    <td>RM<span id="total">0</span></td>
+                </tr>
+            </table>
+
+
+            <div class="cart-buttons">
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+
+    <div class="main-content">
+        <div class="left box">
+            <h2>OPENING HOURS</h2>
+            <div class="content">
+                <dl>
+                    <dt>Monday 8:00am-8:00pm</dt>
+                    <dt>Tuesday 8:00am-8:00pm</dt>
+                    <dt>Wednesday 8:00am-8:00pm</dt>
+                    <dt>Thursday 8:00am-8:00pm</dt>
+                    <dt>Friday 8:00am-8:00pm</dt>
+                    <dt>Saturday 10:00am-5:00pm</dt>
+                    <dt>Sunday 10:00am-5:00pm</dt>
+                </dl>
+            </div>
+        </div>
+        
+        <div class="center box">
+            <h2>LOCATION</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://goo.gl/maps/juyn7psf9PmqXTtn8"><img src="images\map.png" width="40px" height="40px" ></a>
+                    <span class="text">	D7 Offices D7-5-22, Bangunan Perdagangan D7, 800 Jalan Sentul, 51000 Kuala Lumpur
+                    </span>
+                </div>
+                <div class="phone">
+                    <a href="tel:+60-1126066714"><img src="images\phone.png" width="40px" height="40px" ></a>
+                    <span class="text">+60-1126066714</span>
+                </div>
+                <div class="email">
+                    <a href="mailto:cherry@jannatasia.net"><img src="images\mail.png" width="40px" height="4" ></a>
+                    <span class="text">cherry@jannatasia.net</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box">
+            <h2>Stay updated with us</h2>
+            <div class="content">
+                <div class="social">
+                <a href="https://www.instagram.com/jannatasiatrading/"><img src="images\instagramlogo.png" width="45px" height="45px"></a>
+                <a href="https://www.facebook.com/jannatasiaTrading?_rdc=1&_rdr"><img src="images\fblogo.png" width="36" height="38px" ></a>
+                <a href="https://t.me/joinchat/GnVn5qqvysBiMjRl"><img src="images\telegramlogo.png" width="43px" height="43px"></a>
+                <a href="https://twitter.com/AsiaHeavensMy"><img src="images\twitterlogo.png" width="42px" height="41px" ></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <h5>Jannat Asia Trading Sdn Bhd (1399709-A) &#169 2021 All Rights Reserved.</h5>
+</footer>
+<!-- end: Footer -->
+
+</body>
+</html>

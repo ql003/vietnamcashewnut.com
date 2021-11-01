@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Web Design Website - Premium Vietnam Cashew Nut Factory
+
+            Author: Wee Qin Lan
+    
+            Filename: sr_contact us.html
+        -->
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <link rel="icon" href="images\iconbrowser.jpg">
+    <title>Vietnam Cashew Nut | Contact Us</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="layout.css" rel="stylesheet" />
+    
+
+<style type="text/css">
+
+    .contactus {
+        width: 100%;
+    }
+
+    .contactus fieldset {
+        width: 1052px;
+        height: 770px;
+        padding: 30px;
+        border: 3px outset gray;
+    }
+    .contactus legend {
+        font-size: 45px;
+        color: rgb(231, 124, 24);
+        font-family: 'Gabriola', 'Lucida Calligraphy', sans-serif;
+    }
+
+    .contactus form {
+        padding: 10px 28px 10px 30px;
+    }
+
+    input[type=text]{
+        width: 100%;
+        padding: 12px 12px 12px 15px;
+        border: 2px solid lightgrey;
+        margin-top: 15px;
+        margin-bottom: 20px;   
+    }  
+
+    input[type=submit]{
+        background-color: black;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    [type=text]#msage{
+        width: 100%;
+        height: 150px;
+        text-align: left;
+    }
+
+    input[type=submit]:hover, input[type=submit]:active{
+        background-color: rgb(68, 42, 8);
+        text-decoration: underline;
+    }
+
+    .contactus h1{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-size: 38px;
+        color: rgb(0, 0, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .contactus p{
+        text-align: center;
+        font-style: 'Times New Roman';
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <div class="homelogo">
+            <a href="sr_home.html"><img src="images\logo.png" alt="Jannat Asia Trading Logo"><h2>Premium Vietnam Cashew Nut Factory</h2></a>
+        </div>
+        
+        <div class="cartlogo">
+            <a href="sr_cart.html"><img src="images\shopping-cart.png" alt="Cart" /></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="sr_home.html">Home</a></li>
+                <li><a href="sr_about us.html">About Us</a></li>
+                <div class="categoryList">
+                    <button class="arrow">Category <img src="images\arrow.png"></button>
+                    <div class="categoryContent">
+                        <a href="sr_breads.html">Breads</a>
+                        <a href="sr_cakes.html">Cakes</a>
+                        <a href="sr_tarts.html">Tarts</a>
+                        <a href="sr_donuts.html">Donuts</a>
+                    </div>
+                </div>
+                <li><a class="active" href="sr_contact us.html">Contact Us</a></li>
+            </ul>   
+        </nav>
+    </div>
+
+    <div class="contactus">
+
+        <h1>Contact Us Via Email</h1>
+        <p><b>Need help?</b> Please fill out contact form, we’ll get back to you within 24 hrs.</p>
+        <fieldset>
+            <legend>Contact Form</legend>
+         <form action="sr_contact us.html" method="get" onsubmit=" return checkform()">
+
+            <label for="yname">Full Name</label>
+            <input type="text" id="yname" name="yourname" placeholder="*Enter your name" >
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="*Enter your email (For example : alice@gmail.com )"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$">
+            <label for="pnum">Phone Number</label>
+            <input type="text" id="pnum" name="phonenumber" placeholder="*Enter your phone number (For example : 012-67896467)" required />
+             <br/>
+             <br/>
+                <label for="msage">Messages</label>
+                <input type="text" id="msage" name="messages" placeholder="Your comments..." ><br/>
+            <input type="submit" value="Submit">
+          </form>
+        </fieldset>
+    </div>
+    
+    <script>
+        function checkform(){
+             if(document.getElementById("yname").value==""){
+                alert("Please Enter Your Full Name");
+                return false;
+            }
+
+            if(document.getElementById("email").value==""){
+                alert("Please Enter Your Email Address");
+                return false;
+            }
+    
+             else if(document.getElementById("pnum").value==""){
+                alert("Please Enter Your Contact Number");
+                return false;
+            }
+    
+                 else{
+                    alert("Thanks for your response!!!");
+                 }
+             }
+    
+            
+    </script>
+    
+<!-- Footer -->
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>OPENING HOURS</h2>
+                <div class="content">
+                    <dl>
+                        <dt>Monday 8:00am-8:00pm</dt>
+                        <dt>Tuesday 8:00am-8:00pm</dt>
+                        <dt>Wednesday 8:00am-8:00pm</dt>
+                        <dt>Thursday 8:00am-8:00pm</dt>
+                        <dt>Friday 8:00am-8:00pm</dt>
+                        <dt>Saturday 10:00am-5:00pm</dt>
+                        <dt>Sunday 10:00am-5:00pm</dt>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="center box">
+                <h2>LOCATION</h2>
+                <div class="content">
+                    <div class="place">
+                        <a href="https://goo.gl/maps/juyn7psf9PmqXTtn8"><img src="images\map.png" width="25px" height="25px" ></a>
+                        <span class="text">	D7 Offices D7-5-22, Bangunan Perdagangan D7, 800 Jalan Sentul, 51000 Kuala Lumpur
+                        </span>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+60-1126066714"><img src="images\phone.png" width="25px" height="25px" ></a>
+                        <span class="text">+60-1126066714</span>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:cherry@jannatasia.net"><img src="images\mail.png" width="28px" height="20px" ></a>
+                        <span class="text">cherry@jannatasia.net</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Stay updated with us</h2>
+                <div class="content">
+                    <div class="social">
+                    <a href="https://www.instagram.com/jannatasiatrading/"><img src="images\instagramlogo.png" width="45px" height="45px"></a>
+                    <a href="https://www.facebook.com/jannatasiaTrading?_rdc=1&_rdr"><img src="images\fblogo.png" width="36" height="38px" ></a>
+                    <a href="https://t.me/joinchat/GnVn5qqvysBiMjRl"><img src="images\telegramlogo.png" width="43px" height="43px"></a>
+                    <a href="https://twitter.com/AsiaHeavensMy"><img src="images\twitterlogo.png" width="42px" height="41px" ></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h5>Jannat Asia Trading Sdn Bhd (1399709-A) &#169 2021 All Rights Reserved.</h5>
+    </footer>
+     <!-- end: Footer -->
+
+</body>
+</html>
